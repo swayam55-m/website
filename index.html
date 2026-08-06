@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============================================================
+       SEO — this is what Google and link previews show.
+       Feel free to tweak the description to match how you'd
+       introduce yourself to a recruiter in one sentence.
+       ============================================================ -->
+  <title>Swayam Mohanty — Data Science @ Boston University</title>
+  <meta name="description" content="Portfolio of Swayam Mohanty, a Data Science major (Business minor) at Boston University. Projects in data analysis, machine learning, and visualization.">
+  <meta property="og:title" content="Swayam Mohanty — Data Science @ BU">
+  <meta property="og:description" content="Data Science major at Boston University. Projects, skills, and interests.">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- Fonts: Space Grotesk (headings) + Inter (body text) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Thin blue bar at the very top that fills up as you scroll -->
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ============================================================
+       NAVIGATION BAR
+       ============================================================ -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">SM<span class="accent-dot">.</span></a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#interests">Interests</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         HERO — the first screen visitors see.
+         The floating orbs, dots, and grid all move at different
+         speeds while you scroll (that's the parallax effect).
+         ============================================================ -->
+    <section class="hero" id="hero">
+
+      <!-- Decorative parallax layers (ignored by screen readers) -->
+      <div class="hero-bg" aria-hidden="true">
+        <div class="orb orb-1" data-speed="0.25"></div>
+        <div class="orb orb-2" data-speed="0.45"></div>
+        <div class="orb orb-3" data-speed="0.15"></div>
+
+        <!-- A little "scatter plot" constellation, as a nod to data science -->
+        <svg class="constellation" data-speed="0.35" viewBox="0 0 600 500" fill="none">
+          <line x1="80"  y1="120" x2="210" y2="60"  />
+          <line x1="210" y1="60"  x2="330" y2="150" />
+          <line x1="330" y1="150" x2="470" y2="90"  />
+          <line x1="330" y1="150" x2="290" y2="300" />
+          <line x1="290" y1="300" x2="130" y2="380" />
+          <line x1="290" y1="300" x2="460" y2="360" />
+          <circle cx="80"  cy="120" r="5"/>
+          <circle cx="210" cy="60"  r="7"/>
+          <circle cx="330" cy="150" r="9"/>
+          <circle cx="470" cy="90"  r="5"/>
+          <circle cx="290" cy="300" r="7"/>
+          <circle cx="130" cy="380" r="5"/>
+          <circle cx="460" cy="360" r="6"/>
+        </svg>
+
+        <div class="hero-grid" data-speed="0.1"></div>
+      </div>
+
+      <div class="hero-content">
+        <p class="hero-eyebrow reveal">Data Science @ Boston University</p>
+        <h1 class="hero-title reveal">
+          Hi, I'm <span class="glow-text">Swayam&nbsp;Mohanty</span>.<br>
+          I turn data into decisions.
+        </h1>
+        <p class="hero-sub reveal">
+          Third-year Data Science major with a Business minor. I like finding
+          the story hidden inside messy datasets — and building things that
+          tell it clearly.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#projects" class="btn btn-primary">View my projects</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll down to About section">
+        <span class="scroll-cue-wheel"></span>
+      </a>
+    </section>
+
+    <!-- ============================================================
+         ABOUT
+         Your photo: save it as  images/me.jpg  and it will appear
+         automatically (a placeholder shows until then).
+         ============================================================ -->
+    <section class="section" id="about">
+      <div class="section-word" data-speed="0.08" aria-hidden="true">ABOUT</div>
+      <div class="container">
+        <h2 class="section-title reveal"><span class="section-num">01</span> About me</h2>
+
+        <div class="about-grid">
+          <div class="about-photo reveal">
+            <div class="photo-frame">
+              <!-- If images/me.jpg doesn't exist yet, the placeholder image loads instead -->
+              <img src="images/me.jpg" alt="Portrait of Swayam Mohanty"
+                   onerror="this.onerror=null; this.src='images/me-placeholder.svg';">
+            </div>
+          </div>
+
+          <div class="about-text">
+            <!-- EDIT: make these paragraphs sound like you. -->
+            <p class="reveal">
+              I'm a rising junior at <strong>Boston University</strong> studying
+              <strong>Data Science</strong> with a minor in <strong>Business
+              Administration</strong>. I'm drawn to the moment when a confusing
+              pile of numbers suddenly becomes an insight someone can act on.
+            </p>
+            <p class="reveal">
+              My coursework spans statistics, machine learning, and data
+              engineering, while my business minor keeps me focused on the
+              question that matters most: <em>"so what?"</em> I'm currently
+              looking for a <strong>Summer 2027 internship</strong> where I can
+              put both sides to work.
+            </p>
+
+            <ul class="fact-list reveal">
+              <li><span class="fact-label">School</span> Boston University</li>
+              <li><span class="fact-label">Major</span> Data Science</li>
+              <li><span class="fact-label">Minor</span> Business Administration</li>
+              <li><span class="fact-label">Class of</span> 2028</li>
+              <li><span class="fact-label">Seeking</span> Summer 2027 internships</li>
+            </ul>
+
+            <a class="btn btn-ghost reveal" href="resume.pdf" target="_blank" rel="noopener">
+              View my résumé ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PROJECTS
+         Don't edit this section here! Your projects live in
+         js/data.js — add or change them there and the cards
+         below build themselves.
+         ============================================================ -->
+    <section class="section section-alt" id="projects">
+      <div class="section-word" data-speed="0.08" aria-hidden="true">WORK</div>
+      <div class="container">
+        <h2 class="section-title reveal"><span class="section-num">02</span> Projects</h2>
+        <p class="section-intro reveal">
+          A few things I've built. Each one taught me something new.
+        </p>
+
+        <div class="projects-grid" id="projectsGrid">
+          <noscript><p>Please enable JavaScript to see my projects.</p></noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SKILLS — edit the lists in js/data.js
+         ============================================================ -->
+    <section class="section" id="skills">
+      <div class="section-word" data-speed="0.08" aria-hidden="true">SKILLS</div>
+      <div class="container">
+        <h2 class="section-title reveal"><span class="section-num">03</span> Skills</h2>
+        <div class="skills-grid" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         INTERESTS — edit the cards in js/data.js
+         ============================================================ -->
+    <section class="section section-alt" id="interests">
+      <div class="section-word" data-speed="0.08" aria-hidden="true">BEYOND</div>
+      <div class="container">
+        <h2 class="section-title reveal"><span class="section-num">04</span> Beyond the data</h2>
+        <p class="section-intro reveal">
+          Things I care about when I'm not in a Jupyter notebook.
+        </p>
+        <div class="interests-grid" id="interestsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT
+         ============================================================ -->
+    <section class="section contact" id="contact">
+      <div class="contact-glow" aria-hidden="true"></div>
+      <div class="container">
+        <h2 class="contact-title reveal">Let's talk.</h2>
+        <p class="contact-sub reveal">
+          I'm always happy to chat about data, internships, or a project idea.
+        </p>
+        <a href="mailto:swayam55@bu.edu" class="btn btn-primary btn-lg reveal">
+          swayam55@bu.edu
+        </a>
+
+        <!-- EDIT: replace # with your real profile links -->
+        <div class="socials reveal">
+          <a href="https://github.com/swayam55-m" target="_blank" rel="noopener">GitHub</a>
+          <span aria-hidden="true">·</span>
+          <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Swayam Mohanty · Built from scratch with HTML, CSS &amp; JavaScript</p>
+  </footer>
+
+  <!-- data.js holds your projects/skills/interests; main.js makes the page work -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
